@@ -1,18 +1,17 @@
-# 🚀 Modern Landing Page
+# Landing Page Project 🚀
 
-A clean, minimalist, and fully responsive landing page website.
+A clean and modern responsive landing page built with HTML and CSS.
 
-## 🔗 Live Demo
-Explore the live website here: 
-👉 **https://sanawebdeveloper098-dev.github.io/landing-page/**
+### Features
+- Fully Responsive Design (Mobile, Tablet & Desktop friendly)
+- Clean UI with smooth navigation
+- Well-structured semantic sections
+- Optimized images and fast loading time
 
-## 🛠️ Tech Stack
-* **HTML5** - Markup & Structure
-* **CSS3** - Custom Styling & Responsiveness
+### Live Demo
+https://sanawebdeveloper098-dev.github.io/landing-page/
 
-## ✨ Key Features
-* **100% Responsive Layout** (Mobile, Tablet, & Desktop friendly)
-* **Clean & Modern UI** with semantic, well-structured code
-* **Fast Performance** & optimized structure
+### Tech Stack
+HTML5, CSS3
 
----
+Built by Sana - Aspiring Web Developer 💻
