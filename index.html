@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaUI - Design Better UI, Faster</title>
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* FOOTER FIX: Body ko Flex container banaya taake footer hamesha bottom par rahe */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #F8FAFC;
+    color: #1E293B;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: #ffffff;
+    box-shadow: 0 4px 12px rgba(0,0,0,.08);
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: 700;
+    color: #2563EB;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin-left: auto;
+    margin-right: 35px; 
+}
+
+.nav-links a {
+    color: #475569;
+    transition: .3s;
+}
+
+.nav-links a:hover {
+    color: #2563EB;
+    text-decoration: underline;
+}
+
+.nav-btn {
+    background: #2563EB;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 8px;
+    transition: .3s;
+}
+
+.nav-btn:hover {
+    background: #1D4ED8;
+}
+
+/* MAIN WRAPPER: Yeh bachi hui saari space cover karega aur footer ko neeche push karega */
+main {
+    flex: 1;
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 120px;
+    padding: 90px 8%;
+    background: linear-gradient(135deg, #0F172A, #1E293B);
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.badge {
+    display: inline-block;
+    background: #1D4ED8;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 30px;
+    font-size: 14px;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 58px;
+    margin: 25px 0;
+    line-height: 1.2;
+}
+
+.hero h1 span {
+    color: #38BDF8;
+}
+
+.hero p {
+    color: #CBD5E1;
+    line-height: 1.8;
+    margin-bottom: 35px;
+    font-size: 18px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.primary-btn {
+    background: #2563EB;
+    color: white;
+    padding: 14px 30px;
+    border-radius: 8px;
+    transition: .3s;
+}
+
+.primary-btn:hover {
+    background: #1D4ED8;
+}
+
+.secondary-btn {
+    border: 2px solid white;
+    color: white;
+    padding: 14px 30px;
+    border-radius: 8px;
+    transition: .3s;
+}
+
+.secondary-btn:hover {
+    background: white;
+    color: #0F172A;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    transition: .3s; 
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 550px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,.35);
+    height: auto;
+    display: block;
+}
+
+.hero-image:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(131, 178, 241, 0.2); 
+}
+
+/* FEATURES */
+.features {
+    padding: 90px 8%;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 42px;
+    margin-bottom: 60px;
+}
+
+.feature-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    width: 270px;
+    padding: 35px 25px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.08);
+    border-top: 5px solid #2563EB;
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(37,99,235,.20);
+}
+
+.icon {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #64748B;
+    line-height: 1.7;
+}
+
+/* FOOTER */
+footer {
+    background: #0F172A;
+    color: white;
+    text-align: center;
+    padding: 40px;
+    width: 100%;
+}
+
+footer h3 {
+    margin-bottom: 10px;
+    color: #38BDF8;
+}
+
+footer p {
+    color: #CBD5E1;
+    margin-top: 8px;
+}
+
+.footer-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.footer-links a {
+    color: #CBD5E1;
+    font-size: 14px;
+    transition: .3s;
+}
+
+.footer-links a:hover {
+    color: #38BDF8;
+    text-decoration: underline;
+}
+
+/* RESPONSIVE FIX FOR IPAD & MOBILE */
+@media(max-width: 1100px) { 
+    .hero {
+        gap: 50px;          
+        padding: 60px 5%;   
+    }
+    
+    .hero h1 {
+        font-size: 46px;   
+    }
+}
+
+@media(max-width: 900px) {
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;          
+        padding: 50px 5%;   
+    }
+
+    .hero-buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero-image {
+        justify-content: center; 
+        width: 100%;
+    }
+
+    .hero-image img {
+        max-width: 100%;  
+    }
+}
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">NovaUI</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <a href="#" class="nav-btn">Get Started</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <span class="badge">🚀 Startup UI Kit</span>
+                <h1>Design Better UI, <span>Faster</span></h1>
+                <p>Responsive HTML & CSS landing pages for SaaS and startups</p>
+                <div class="hero-buttons">
+                    <a href="#" class="primary-btn">Get Started</a>
+                    <a href="#" class="secondary-btn">Live Demo</a>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5k-hcmewcj7_gsJlZ4n_ahOk2GHV3pzq5jOOiqmjMcQ&s=10" alt="Dashboard">
+            </div>
+        </section>
+
+        <section class="features">
+            <h2>Why Choose NovaUI?</h2>
+            <div class="feature-container">
+                <div class="card">
+                    <div class="icon">🚀</div>
+                    <h3>Fast Performance</h3>
+                    <p>Lightning-fast loading and optimized layouts for a better user experience.</p>
+                </div>
+                <div class="card">
+                    <div class="icon">🎨</div>
+                    <h3>Modern Design</h3>
+                    <p>Beautiful UI components with premium startup styling.</p>
+                </div>
+                <div class="card">
+                    <div class="icon">📱</div>
+                    <h3>Responsive</h3>
+                    <p>Works perfectly on desktop, tablet, and mobile devices.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h3>NovaUI</h3>
+        <p>Build beautiful digital experiences with modern UI.</p>
+        <p>© 2026 NovaUI. All Rights Reserved.</p>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Support</a>
+        </div>
+    </footer>
+
+</body>
+</html>
